@@ -5,6 +5,13 @@
 }
 .hidden{
     overflow: hidden;
+    
+}
+.body{
+    background: linear-gradient(180deg, #e66465, #9198e5);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 header{
     border: 1px solid black;
@@ -12,28 +19,27 @@ header{
 
 footer{
     background-color: black;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
+    margin-top: 0;
     color: white;
     text-align: center;
+    height: 63px;
 }
 .content-navidad{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
-    width: 100%;
-    height: 100vh;
+    /* border: 1px solid red; */
+    /* width: 100%;
+    height: 100vh; */
 
 } 
 
 .navidad
 {
-position: relative;
+/* position: relative; */
  height: 300px;   
 }
+
 /* PAGINA DE CARGA */
 #contenedor-carga{
     
@@ -44,11 +50,14 @@ position: relative;
     height: 100vh;
 }
 #carga{
-    border: 15px solid #ccc;
-    border-top-color: #f4266a;
-    border-top-style: groove;
+    border: 15px solid;
+    background: #000;
     height: 100px;
     width: 100px;
+    border-image-source: url("../icon/cohete-1.png");
+    border-image-slice: 80 fill;
+    border-image-repeat: round;
+    /* border-image-outset: 10px; */
     border-radius: 100%;
     animation: carga 2s linear infinite;
 }
@@ -65,7 +74,7 @@ position: relative;
 @keyframes cohete{
     0% { transform: rotate(0deg); }
     50% { transform: rotate(50deg); }
-    70%{transform: translateX(1200px) rotate(50deg);}
+    70%{transform: translateX(1270px) rotate(50deg)}
     80% {transform: rotate(-360deg); }
     100%{transform: translateX(50px 00.2s);}
 
@@ -76,9 +85,10 @@ position: relative;
     height: 5rem;
     width: 100%;
     display: flex;
+    position: relative;
     /* background-color: #053742; */
-    box-shadow: 0 3px 20px rgb(235, 16, 16);
-    font-family: 'Amatic SC', cursive;
+    /* box-shadow: 0 3px 20px rgb(212, 83, 83); */
+    font-family: 'Amatic SC', cursive ;
 
     font-family: 'Barlow Condensed', sans-serif;
 
@@ -91,6 +101,7 @@ position: relative;
     font-family: 'Ubuntu Mono', monospace;
 
     font-weight: 900;
+    border: none;
 }
 
 /* Styling Logo*/
@@ -119,17 +130,25 @@ position: relative;
 }
 
 .nav-links li a{
+    color: rgb(255, 246, 246);
     margin: 0 0.7vw;
     text-decoration: none;
     transition: all ease-in-out 350ms;
     padding: 10px;
+    /* border: 0.5px solid rgb(212, 89, 89);
+    border-radius: 7px; */
+    box-shadow: -4px 23px 14px -14px rgba(212,83,83,0.83);
+-webkit-box-shadow: -4px 23px 14px -14px rgba(212,83,83,0.83);
+-moz-box-shadow: -4px 23px 14px -14px rgba(212,83,83,0.83);
 }
 
 .nav-links li a:hover{
-    color:#000;
-    background-color: #fff;
+    color:rgb(255, 246, 246);
+    background-color: rgb(212, 89, 89);
     padding: 10px;
     border-radius: 50px;
+    /* box-shadow: 0 3px 20px rgb(212, 83, 83); */
+    box-shadow: none;
 }
 
 .nav-links li{
@@ -149,14 +168,16 @@ position: relative;
     font-size:1rem;
     cursor:pointer;
     background-color: transparent;
-    border:1.5px solid #f2f5f7;
-    border-radius: 2em;
+    border:1.5px solid #0a0ef57a;
+    border-radius: 7px;
 }
-
+.cv_descarga{
+    background-color: #00a0f7;
+}
 .login-button:hover{
     color:#fff;
-    background-color: #dd5f24;
-    border:1.5px solid #dd5f24;
+    background-color: hsla(56, 84%, 45%, 0.877);
+    border:1.5px solid #f3c600d0;
     transition: all ease-in-out 350ms;
 }
 
@@ -165,7 +186,7 @@ position: relative;
 .hamburger div{
     width: 30px;
     height: 3px;
-    background: #f2f5f7;
+    background: linear-gradient(130deg, #00a0f7, hsl(350, 97%, 49%));
     margin: 5px;
     transition: all 0.3s ease;
 }
@@ -193,9 +214,9 @@ position: relative;
         transition: all 0.7s ease;
     }
     .nav-links{
-        background: #053742;
+        background: linear-gradient(130deg, #54addd, hsl(350, 80%, 61%));
         position: fixed;
-        opacity: 1;
+        opacity: 0.9;
         height: 100vh;
         width: 100%;
         flex-direction: column;
@@ -203,6 +224,10 @@ position: relative;
         -webkit-clip-path: circle(50px at 90% -10%);
         transition: all 1s ease-out;
         pointer-events: none;
+        
+    }
+    .nav-links li a{
+        border: none;
     }
     .nav-links.open{
         clip-path: circle(1000px at 90% -10%);
@@ -256,3 +281,4 @@ position: relative;
         }
 
 }
+

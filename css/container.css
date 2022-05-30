@@ -1,0 +1,34 @@
+.contenido{
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: 1px solid black;
+    height: 500px;
+}
+.fila{
+    border: 2px solid tomato;
+    width: 50%;
+    height: 100px;
+    text-align: center;
+}
+.fila-2{
+    border: 2px solid tomato;
+    width: 50%;
+
+}
+.foto{
+    max-width: 300px;
+}
+@media screen and (max-width: 800px) {
+    .contenido{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid black; 
+        height: 500px;
+    }
+}
