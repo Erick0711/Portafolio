@@ -17,15 +17,6 @@ hamburger.addEventListener('click', ()=>{
 const vitae = document.getElementById("cv")
 
 
-// vitae.addEventListener("click", ()=>{
-//     vitae.style.backgroundImage = "url('../icon/folder.png')";
-//     vitae.style.width = "50px";
-//     vitae.style.height = "50px";
-//     vitae.style.backgroundSize = "cover";
-//     vitae.style.border = "none";
-//     vitae.innerHTML = ""
-// })
-
 vitae.addEventListener("click", (e)=>{
   if (e.detail.value) {
     vitae.classList.remove("login-button")
