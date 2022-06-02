@@ -181,3 +181,66 @@
         transform: translateY(-20px);
     }
 }
+
+/* BARRA DE PROGRESO */
+
+.caja{
+    display: flex;
+    overflow: scroll;
+    scrollbar-width: thin;       
+    scrollbar-color: rgb(192, 46, 46) rgb(109, 102, 90);
+    width: 100%;
+  }
+  
+  
+  .container {
+    height: 400px;
+    min-width: 450px;
+    background-color: #ffffff;
+  
+    border-radius: 8px;
+    box-shadow: 20px 20px 40px rgb(27, 230, 8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .circular-progress, .circular-progress2, .circular-progress3, .circular-progress4, .circular-progress5 {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+  }
+  .circular-progress:before, .circular-progress2:before, .circular-progress3:before, .circular-progress4:before, .circular-progress5:before {
+    content: "";
+    position: absolute;
+    height: 84%;
+    width: 84%;
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+  .value-container,.value-container2, .value-container3, .value-container4, .value-container5 {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    color: #231c3d;
+    margin-bottom: 20px;
+  }
+  .html{  
+  
+    position: relative;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+  }
+  .html-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+  }
+  
