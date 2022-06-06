@@ -183,64 +183,79 @@
 }
 
 /* BARRA DE PROGRESO */
-
-.caja{
+.container-progreso{
     display: flex;
-    overflow: scroll;
-    scrollbar-width: thin;       
-    scrollbar-color: rgb(192, 46, 46) rgb(109, 102, 90);
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-  }
-  
-  
-  .container {
-    height: 400px;
-    min-width: 450px;
-    background-color: #ffffff;
-  
+    height: 100%;
+    /* border: 1px solid black; */
+}
+.progre-1,.progre-2,.progre-3,.progre-4,.progre-5,.progre-6{
+    border: 1px solid tomato;
+    min-width: 70%;
+}
+.progre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 5px solid green; */
+    min-width: 70%;
+}
+.progresion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    /* border: 1px solid rgba(255, 0, 0, 0.26); */
     border-radius: 8px;
-    box-shadow: 20px 20px 40px rgb(27, 230, 8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .circular-progress, .circular-progress2, .circular-progress3, .circular-progress4, .circular-progress5 {
-    position: relative;
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-  }
-  .circular-progress:before, .circular-progress2:before, .circular-progress3:before, .circular-progress4:before, .circular-progress5:before {
-    content: "";
-    position: absolute;
-    height: 84%;
-    width: 84%;
-    background-color: #ffffff;
-    border-radius: 50%;
-  }
-  .value-container,.value-container2, .value-container3, .value-container4, .value-container5 {
-    position: relative;
-    font-family: "Poppins", sans-serif;
-    font-size: 50px;
-    color: #231c3d;
-    margin-bottom: 20px;
-  }
-  .html{  
-  
-    position: relative;
-    width: 80px;
-    height: 80px;
-    text-align: center;
-  }
-  .html-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    margin-top: 30px;
-  }
-  
+}
+.tamaño-html{
+    width: 80%;
+    animation: progresion 9s linear;
+    color: white;
+    background-color: #fd4b0f;
+}
+.tamaño-css{
+    width: 80%;
+    animation: progresion 9s linear;
+    background-color: #2193f3;
+    color: white;
+}
+.tamaño-bootstrap{
+    width: 70%;
+    background-color: #5e3b7f;
+    color: white;
+    animation: progresion 7s linear;
+}
+.tamaño-js{
+    width: 30%;
+    background-color: #ffdf00;
+    color: white;
+    animation: progresion 3s linear;
+}
+.tamaño-php{
+    width: 40%;
+    background-color: #000;
+    color: white;
+    animation: progresion 4s linear;
+}
+.tamaño-laravel{
+    width: 30%;
+    background-color: #ff5549;
+    color: white;
+    animation: progresion 3s linear;
+}
+.lenguages{
+    width: 50px;
+}
+.imagen{
+    padding: 10px;
+}
+
+@keyframes progresion {
+    from{width: 0;}
+}
