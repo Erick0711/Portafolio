@@ -156,7 +156,7 @@ header{
     /* border: 0.5px solid rgb(212, 89, 89);
     border-radius: 7px; */
     box-shadow: -4px 23px 14px -14px rgba(212,83,83,0.83);
--webkit-box-shadow: -4px 23px 14px -14px rgba(212,83,83,0.83);
+    -webkit-box-shadow: -4px 23px 14px -14px rgba(212,83,83,0.83);
 -moz-box-shadow: -4px 23px 14px -14px rgba(212,83,83,0.83);
 }
 
@@ -297,6 +297,5 @@ header{
         .toggle .bars3{
             transform: rotate(45deg) translate(-5px, -6px);
         }
-
 }
 
