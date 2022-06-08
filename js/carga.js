@@ -2,6 +2,8 @@ window.onload = function carga(){
     $("#contenedor-carga").fadeOut();
     $("body").removeClass("hidden")
 }
+
+// CONTADOR DE PROGRESO
 const lengHtml = document.querySelector(".html"),
  lengCss = document.querySelector(".css"),
  lengBootstrap = document.querySelector(".bootstrap"),

@@ -1,3 +1,40 @@
+.descripcion{
+    display: inline-block;
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 0;
+    position: relative;
+    color: #ff5549;
+
+    font-family: 'Amatic SC', cursive ;
+
+    font-family: 'Barlow Condensed', sans-serif;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-family: 'Roboto', sans-serif;
+
+    font-family: 'Roboto Serif', serif;
+
+    font-family: 'Ubuntu Mono', monospace;
+
+    font-weight: 900;
+}
+.descripcion:after, .descripcion:before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: currentColor;
+    top: 0.6em;
+
+}
+.descripcion:before{
+    left: 450px;
+}
+.descripcion:after{
+    right: 450px;
+}
 .contenido{
     position: relative;
     display: flex;
@@ -103,16 +140,25 @@
     }
     .fila{
         padding: 40px;
-       
+        box-shadow: none;
+        border-radius: none;
     }
     .fila-2{
         display: flex;
         justify-content: center;
         align-items: center;
-
-    }
+    }   
     .foto{
         max-width: 300px;
+    }
+    .descripcion{
+        margin-bottom: 30px;
+    }
+    .descripcion:before{
+        opacity: 0;
+    }
+    .descripcion:after{
+       opacity: 0;
     }
 }
 
@@ -200,7 +246,7 @@
 .progre{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
     /* border: 5px solid green; */
     min-width: 70%;
@@ -258,4 +304,11 @@
 
 @keyframes progresion {
     from{width: 0;}
+}
+
+/* SCROLL */
+
+.animado{
+    opacity: 0;
+    transition: all 0.5s;
 }
