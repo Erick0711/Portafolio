@@ -1,3 +1,7 @@
+<?php
+    include "./correos.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +33,7 @@
 
     <div class="container">
 
-            <form action="./correos.php" method="POST" class="contacto">
+        <form action="./correos.php" method="POST" class="contacto">
             <h1>CONTACTANOS</h1>
             <div class="inputBox">
             <input type="text" name="nombre" id="" required="required">
@@ -45,11 +49,11 @@
             <span>Correo</span>
 
             <div class="inputBox">
-            <textarea name="mensaje" id="" cols="30" rows="10"></textarea required="required">
+            <textarea name="mensaje" id="" cols="30" rows="10" required="required"></textarea>
             <span>Asunto</span>
 
             <input type="submit" value="Enviar" class="enviar">
-            </form>
+        </form>
 
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

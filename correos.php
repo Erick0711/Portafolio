@@ -8,12 +8,12 @@
     $correo = $_POST['correo'];
     $asunto = $_POST['mensaje'];
 
-    $header = "<h1>ENVIADO DESDE EL PORTAFOLIO DE MAICOL ERICK</h1>";
+    $header = "ENVIADO DESDE EL PORTAFOLIO DE MAICOL ERICK";
 
-    $mensajeCompleto = $mensaje . "<br>" ."Atentamente:". $nombre. " " . $apellido;
+    $mensajeCompleto = $mensaje ."Atentamente:". $nombre. " " . $apellido;
     
     mail($destinatario, $asunto, $mensajeCompleto, $header);
 
     echo "<script>alert('Correo Enviado')</script>";
-    echo "<script>setTimeout(\"location.href='index.html'\", 1000)</script>";
+    echo "<script>setTimeout(\"location.href='index.php'\", 1000)</script>";
 ?>
