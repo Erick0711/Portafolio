@@ -49,9 +49,9 @@
             <div class="bars3"></div>
         </div>
         <ul class="nav-links">
-            <li><a href="index.html">Descripción</a></li>
+            <li><a href="index.php">Descripción</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="./contacto.php">Proyectos</a></li>
+            <li><a href="contacto.php">Proyectos</a></li>
             <li><a href="#">Contacto</a></li>
             <li><a href="https://drive.google.com/file/d/1auy4hBTyq7auADmjs5FBt5hsjv2bbWla/view?usp=sharing" target="_blank" class="login-button">Curriculum Vitae</a></li>
         </ul>
