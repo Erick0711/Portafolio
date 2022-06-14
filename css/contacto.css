@@ -1,0 +1,112 @@
+/* ESTILOS DEL TRABAJO EN PROGRESO */
+/* .constructor{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.constructor img{
+    width: 10rem;
+}
+.constructor a{
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    margin-top: 25px;
+    padding: 8px;
+    transition:  all 0.5s;
+    box-shadow: 0px 20px 3px solid black;
+}
+.constructor a:hover{
+    background-color: bisque;
+    color: black;
+    border: none;
+} */
+
+
+.container{
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #1d2b3a; */
+}
+.contacto h1{
+    margin-bottom: 25px;
+    color: rgb(216, 83, 83);
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* border: 1px solid white; */
+    min-width: 80%;
+    min-height: 40%;
+}
+.inputBox{
+    position: relative;
+    min-width: 500px;
+}
+
+.inputBox input, .inputBox input, .inputBox textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background-color: #2e2b2b;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    margin-bottom: 25px;
+    transition: 0.5s;
+}
+
+.inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.25);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span,
+.inputBox textarea:valid ~ span,
+.inputBox textarea:focus ~ span{
+    color: #00dfc4;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background-color: #1d2b3a;
+    border-left: 1px solid #00dfc4;
+    border-right: 1px solid #00dfc4;
+    letter-spacing: 0.2em;
+}
+
+/* .inputBox:nth-child(2) input:valid ~ span,
+.inputBox:nth-child(2) input:focus ~ span{
+    background-color: #00dfc4;
+    color: #1d2b3a;
+    border-radius: 2px;
+} */
+
+.inputBox input:valid,
+.inputBox input:focus,
+.inputBox textarea:valid,
+.inputBox textarea:focus{
+    border: 1px solid #00dfc4;
+}
+
+.enviar{
+    background-color: #c5384a !important;
+    border: none !important;
+}
