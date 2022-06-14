@@ -10,7 +10,7 @@
 
     $header = "ENVIADO DESDE EL PORTAFOLIO DE MAICOL ERICK";
 
-    $mensajeCompleto = $mensaje ."Atentamente:". $nombre. " " . $apellido;
+    $mensajeCompleto = $asunto ."Atentamente:". $nombre. " " . $apellido;
     
     mail($destinatario, $asunto, $mensajeCompleto, $header);
 
