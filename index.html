@@ -10,6 +10,7 @@
     <!-- ESTILOS -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/container.css">
+    <link rel="stylesheet" href="./css/contacto.css">
     <!-- GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -288,11 +289,40 @@
       </div>
     </div>
 
+
+
+    <div class="container">
+
+        <form action="./correos.php" method="POST" class="contacto">
+            <h1>CONTACTANOS</h1>
+            <div class="inputBox">
+            <input type="text" name="nombre" id="" required="required">
+            <span>Nombre</span>
+            </div>
+
+            <div class="inputBox">
+            <input type="text" name="apellido" id="" required="required">
+            <span>Apellido</span>
+
+            <div class="inputBox">
+            <input type="email" name="correo" id="" required="required">
+            <span>Correo</span>
+
+            <div class="inputBox">
+            <textarea name="mensaje" id="" cols="30" rows="10" required="required"></textarea>
+            <span>Asunto</span>
+
+            <input type="submit" value="Enviar" class="enviar">
+        </form>
+
+    </div>
+
     <!-- PIE DE PAGINA -->
     <footer class="footer">
         <p class="copyrigth">Todos los derechos reservados © Mai 2022</p>
 
         <ul class="item-footer">
+            
             <li>
                 <a href="https://github.com/Erick0711" target="_blank"><img src="./icon/github.png" alt="Github"></a>
             </li>
