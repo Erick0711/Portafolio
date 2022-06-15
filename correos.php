@@ -1,5 +1,4 @@
 <?php
-
     $destinatario = 'maicolarteaga0711@gmail.com';
     // ESTO ES PARA EL CORREO AL QUE SE ENVIARA EL MENSAJE
 
@@ -10,10 +9,10 @@
 
     $header = "ENVIADO DESDE EL PORTAFOLIO DE MAICOL ERICK";
 
-    $mensajeCompleto = $asunto ."Atentamente:". $nombre. " " . $apellido;
+    $mensajeCompleto = $asunto ."Atentamente:". $nombre. " " . $apellido. $correo;
     
     mail($destinatario, $asunto, $mensajeCompleto, $header);
 
     echo "<script>alert('Correo Enviado')</script>";
-    echo "<script>setTimeout(\"location.href='index.php'\", 1000)</script>";
+    echo "<script>setTimeout(\"location.href='index.html'\", 1000)</script>";
 ?>
